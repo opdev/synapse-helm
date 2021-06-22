@@ -304,6 +304,7 @@ spec:
       subPath: ""
     port: 5432
     postgresqlDataDir: /bitnami/postgresql/data
+    postgresqlPassword: ChangeMe!
     postgresqlUsername: postgres
     readinessProbe:
       enabled: true
