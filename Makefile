@@ -36,7 +36,7 @@ IMAGE_TAG_BASE ?= opdev.io/helm-synapse-operator
 BUNDLE_IMG ?= $(IMAGE_TAG_BASE)-bundle:v$(VERSION)
 
 # Image URL to use all building/pushing image targets
-IMG ?= controller:latest
+IMG ?= quay.io/mgoerens/helm-synapse-operator:v0.0.6
 
 all: docker-build
 

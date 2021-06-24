@@ -125,6 +125,7 @@ spec:
       riot: element.chart-example.local
       synapse: matrix.chart-example.local
     tls: []
+  isOpenshift: true
   mail:
     enabled: true
     external:

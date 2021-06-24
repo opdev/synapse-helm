@@ -48,14 +48,6 @@ rules:
 - verbs:
   - "*"
   apiGroups:
-  - "apps"
-  resources:
-  - "daemonsets"
-  - "deployments"
-  - "statefulsets"
-- verbs:
-  - "*"
-  apiGroups:
   - "networking.k8s.io"
   resources:
   - "ingresses"
@@ -69,5 +61,19 @@ rules:
   - "persistentvolumeclaims"
   - "secrets"
   - "services"
+- verbs:
+  - "*"
+  apiGroups:
+  - "apps"
+  resources:
+  - "daemonsets"
+  - "deployments"
+  - "statefulsets"
+- verbs:
+  - "*"
+  apiGroups:
+  - "batch"
+  resources:
+  - "jobs"
 
 #+kubebuilder:scaffold:rules
