@@ -48,13 +48,6 @@ rules:
 - verbs:
   - "*"
   apiGroups:
-  - "networking.k8s.io"
-  resources:
-  - "ingresses"
-  - "networkpolicies"
-- verbs:
-  - "*"
-  apiGroups:
   - ""
   resources:
   - "configmaps"
@@ -72,8 +65,9 @@ rules:
 - verbs:
   - "*"
   apiGroups:
-  - "batch"
+  - "networking.k8s.io"
   resources:
-  - "jobs"
+  - "ingresses"
+  - "networkpolicies"
 
 #+kubebuilder:scaffold:rules
