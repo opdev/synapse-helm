@@ -70,4 +70,25 @@ rules:
   - "deployments"
   - "statefulsets"
 
+- apiGroups:
+  - "rbac.authorization.k8s.io"
+  resources:
+  - "rolebindings"
+  verbs:
+  - "create"
+  - "delete"
+  - "get"
+  - "list"
+  - "patch"
+  - "update"
+  - "watch"
+- apiGroups:
+  - "rbac.authorization.k8s.io"
+  resources:
+  - "clusterroles"
+  verbs:
+  - "bind"
+  resourceNames:
+  - "system:openshift:scc:privileged"
+
 #+kubebuilder:scaffold:rules
