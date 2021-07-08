@@ -31,6 +31,49 @@ spec:
             type: object
           spec:
             description: Spec defines the desired state of Synapse
+            properties:
+              matrix:
+                description: Runtime configuration for Synapse and settings related to the Matrix protocol
+                type: object
+              volumes:
+                description: Persistent volumes configuration
+                type: object
+              ingress:
+                description: Ingress configuration
+                type: object
+              postgresql:
+                description: PostgreSQL Database Configuration
+                type: object
+              synapse:
+                description: Synapse Kubernetes resource settings
+                type: object
+              riot:
+                description: Element (formerly Riot Web) client configuration
+                type: object
+              coturn:
+                description: Settings for Coturn TURN relay, used for routing voice calls
+                type: object
+              mail:
+                description: Settings for email notifications
+                type: object
+              bridges:
+                description: Bridges settings
+                type: object
+              isOpenshift:
+                description: Boolean to set to true if the CR is being deployed on an OpenShift cluster.
+                type: boolean
+              imagePullSecrets:
+                description: imagePullSecrets
+                type: array
+              nameOverride:
+                description: nameOverride
+                type: string
+              networkPolicies:
+                description: networkPolicies
+                type: object
+              fullnameOverride:
+                description: fullnameOverride
+                type: string
             type: object
             x-kubernetes-preserve-unknown-fields: true
           status:
