@@ -707,6 +707,10 @@ spec:
         path: fullnameOverride
         x-descriptors:
         - 'urn:alm:descriptor:com.tectonic.ui:text'
+      statusDescriptors:
+      - description: descriptions
+        displayName: Descriptions
+        path: descriptions
   description: Helm based operator for Synapse
   displayName: helm-synapse-operator
   icon:
