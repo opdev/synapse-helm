@@ -1,0 +1,43 @@
+apiVersion: operators.coreos.com/v1alpha1
+kind: ClusterServiceVersion
+metadata:
+  annotations:
+    alm-examples: '[]'
+    capabilities: Basic Install
+  name: helm-synapse-operator.v0.0.0
+  namespace: placeholder
+spec:
+  apiservicedefinitions: {}
+  customresourcedefinitions: {}
+  description: Helm based operator for Synapse
+  displayName: helm-synapse-operator
+  icon:
+  - base64data: ""
+    mediatype: ""
+  install:
+    spec:
+      deployments: null
+    strategy: ""
+  installModes:
+  - supported: false
+    type: OwnNamespace
+  - supported: false
+    type: SingleNamespace
+  - supported: false
+    type: MultiNamespace
+  - supported: true
+    type: AllNamespaces
+  keywords:
+  - synapse
+  - matrix
+  - helm
+  links:
+  - name: Helm Synapse Operator
+    url: https://helm-synapse-operator.domain
+  maintainers:
+  - email: mgoerens@redhat.com'
+    name: '''Matthias Goerens'
+  maturity: alpha
+  provider:
+    name: Community
+  version: 0.0.0
