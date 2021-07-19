@@ -839,7 +839,7 @@ spec:
                 - --metrics-bind-address=127.0.0.1:8080
                 - --leader-elect
                 - --leader-election-id=synapse-helm
-                image: quay.io/mgoerens/synapse-helm:v0.0.9
+                image: quay.io/mgoerens/synapse-helm:v0.0.10
                 livenessProbe:
                   httpGet:
                     path: /healthz
