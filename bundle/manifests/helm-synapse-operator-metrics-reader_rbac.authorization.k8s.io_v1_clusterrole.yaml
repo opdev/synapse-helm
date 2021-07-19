@@ -2,7 +2,7 @@ apiVersion: rbac.authorization.k8s.io/v1
 kind: ClusterRole
 metadata:
   creationTimestamp: null
-  name: helm-synapse-operator-metrics-reader
+  name: synapse-helm-metrics-reader
 rules:
 - nonResourceURLs:
   - /metrics

@@ -4,7 +4,7 @@ metadata:
   creationTimestamp: null
   labels:
     control-plane: controller-manager
-  name: helm-synapse-operator-controller-manager-metrics-service
+  name: synapse-helm-controller-manager-metrics-service
 spec:
   ports:
   - name: https

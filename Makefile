@@ -28,15 +28,15 @@ BUNDLE_METADATA_OPTS ?= $(BUNDLE_CHANNELS) $(BUNDLE_DEFAULT_CHANNEL)
 # This variable is used to construct full image tags for bundle and catalog images.
 #
 # For example, running 'make bundle-build bundle-push catalog-build catalog-push' will build and push both
-# opdev.io/helm-synapse-operator-bundle:$VERSION and opdev.io/helm-synapse-operator-catalog:$VERSION.
-IMAGE_TAG_BASE ?= opdev.io/helm-synapse-operator
+# opdev.io/synapse-helm-bundle:$VERSION and opdev.io/synapse-helm-catalog:$VERSION.
+IMAGE_TAG_BASE ?= opdev.io/synapse-helm
 
 # BUNDLE_IMG defines the image:tag used for the bundle.
 # You can use it as an arg. (E.g make bundle-build BUNDLE_IMG=<some-registry>/<project-name-bundle>:<tag>)
 BUNDLE_IMG ?= $(IMAGE_TAG_BASE)-bundle:v$(VERSION)
 
 # Image URL to use all building/pushing image targets
-IMG ?= quay.io/mgoerens/helm-synapse-operator:v0.0.9
+IMG ?= quay.io/mgoerens/synapse-helm:v0.0.9
 
 all: docker-build
 

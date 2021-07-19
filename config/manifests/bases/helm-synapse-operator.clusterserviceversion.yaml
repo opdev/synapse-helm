@@ -4,13 +4,13 @@ metadata:
   annotations:
     alm-examples: '[]'
     capabilities: Basic Install
-  name: helm-synapse-operator.v0.0.0
+  name: synapse-helm.v0.0.0
   namespace: placeholder
 spec:
   apiservicedefinitions: {}
   customresourcedefinitions: {}
   description: Helm based operator for Synapse
-  displayName: helm-synapse-operator
+  displayName: synapse-helm
   icon:
   - base64data: ""
     mediatype: ""
@@ -33,7 +33,7 @@ spec:
   - helm
   links:
   - name: Helm Synapse Operator
-    url: https://helm-synapse-operator.domain
+    url: https://synapse-helm.domain
   maintainers:
   - email: mgoerens@redhat.com'
     name: '''Matthias Goerens'

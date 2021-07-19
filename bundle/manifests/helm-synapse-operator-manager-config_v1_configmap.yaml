@@ -12,4 +12,4 @@ data:
       resourceName: 811c9dc5.opdev.io
 kind: ConfigMap
 metadata:
-  name: helm-synapse-operator-manager-config
+  name: synapse-helm-manager-config
