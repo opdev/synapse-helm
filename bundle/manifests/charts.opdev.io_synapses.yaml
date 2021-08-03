@@ -65,6 +65,7 @@ spec:
               imagePullSecrets:
                 description: imagePullSecrets
                 type: array
+                default: []
               nameOverride:
                 description: nameOverride
                 type: string

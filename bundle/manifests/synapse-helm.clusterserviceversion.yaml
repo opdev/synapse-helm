@@ -562,8 +562,12 @@ metadata:
         }
       ]
     capabilities: Basic Install
+    certified: 'false'
+    categories: Developer Tools
     operators.operatorframework.io/builder: operator-sdk-v1.7.1+git
     operators.operatorframework.io/project_layout: helm.sdk.operatorframework.io/v1
+    containerImage: 'quay.io/mgoerens/synapse-helm:v0.0.10'
+    repository: https://github.com/opdev/synapse-helm
   name: synapse-helm.v0.0.1
   namespace: placeholder
 spec:
@@ -915,13 +919,15 @@ spec:
   - matrix
   - helm
   links:
-  - name: Helm Synapse Operator
-    url: https://synapse-helm.domain
+  - name: Helm Synapse Operator repository
+    url: https://github.com/opdev/synapse-helm
+  - name: Base Helm chart
+    url: https://github.com/mgoerens/matrix-chart
   maintainers:
-  - email: mgoerens@redhat.com'
-    name: '''Matthias Goerens'
+  - email: mgoerens@redhat.com
+    name: 'Matthias Goerens'
   maturity: alpha
   minKubeVersion: 1.19.0
   provider:
-    name: Red Hat
+    name: Community
   version: 0.0.1
